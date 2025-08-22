@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dreamy Diaries - PremiiTreasures 💖</title>
+  <link rel="stylesheet" href="css/diary.css">
+</head>
+<body>
+  <h1>🌹 My Love Creations for You, Premii 😘💖</h1>
+
+  <div class="controls">
+    <input type="text" id="search" placeholder="Search by title or date...">
+    <select id="filterStatus" style="margin-right:0.5em">
+      <option value="all">All</option>
+      <option value="published">Published</option>
+      <option value="new">New</option>
+      <option value="coming">Coming Soon</option>
+    </select>
+    <select id="filterYear" style="margin-right:0.5em">
+      <option value="">Filter by year</option>
+    </select>
+    <select id="filterMonth">
+      <option value="">Filter by month</option>
+    </select>
+    <button onclick="sortByTitle()">Sort by Title</button>
+    <button onclick="sortByDate()">Sort by Date</button>
+  </div>
+  <p style="color:#d63384; font-weight:bold; margin-bottom:10px;">
+    💌 Click on the text to leave a note or see surprises 💖
+  </p>
+  <ul id="creationsList"></ul>
+
+  <script src = "js/diary.js"></script>
+</body>
+</html>
