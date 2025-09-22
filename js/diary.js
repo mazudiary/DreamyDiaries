@@ -89,6 +89,12 @@ const creations = [
     date: "2025-09-17",
     availableAt: "2025-09-17T00:00",
   },
+  {
+    title: "Tashbih Counter",
+    link: "https://mazudiary.github.io/tashbihcounter/",
+    date: "2025-09-22",
+    availableAt: "2025-09-22T00:00",
+  },
 ];
 
 let filtered = [...creations];
@@ -335,3 +341,4 @@ function showComingSoonPopup(title, dateObj) {
 
 // ---------------- Initial render ----------------
 renderList();
+
