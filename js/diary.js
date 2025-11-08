@@ -101,6 +101,18 @@ const creations = [
     date: "2025-10-17",
     availableAt: "2025-10-17T00:47",
   },
+  {
+    title: "Premii & Idiot – 5 Months 😘💖",
+    link: "https://mazudiary.github.io/PremiiIdiot-5Months/",
+    date: "2025-11-17",
+    availableAt: "2025-10-17T00:47",
+  },
+  {
+    title: "Thanks Giving 2025",
+    link: "https://mazudiary.github.io/ThanksGiving2025/",
+    date: "2025-10-17",
+    availableAt: "2025-11-27T00:00",
+  },
 ];
 
 let filtered = [...creations];
@@ -347,5 +359,6 @@ function showComingSoonPopup(title, dateObj) {
 
 // ---------------- Initial render ----------------
 renderList();
+
 
 
