@@ -114,11 +114,24 @@ const creations = [
     availableAt: "2025-11-27T00:00",
   },
   {
+    title: "Premii & Idiot – 6 Months 😘💖",
+    link: "https://mazudiary.github.io/PremiiIdiot-6Months/",
+    date: "2025-12-17",
+    availableAt: "2025-12-17T00:47",
+  },
+  {
+    title: "Premii & Idiot – 6 Months(Special) 😘💖",
+    link: "https://mazudiary.github.io/PremiiIdiot-6Months-Special/",
+    date: "2025-12-17",
+    availableAt: "2025-12-17T00:47",
+  },
+  {
     title: "Premii Birthday's 2026",
     link: "https://mazudiary.github.io/PremiiBD2026/",
     date: "2026-05-15",
     availableAt: "2026-05-15T00:00",
   },
+  
 ];
 
 let filtered = [...creations];
@@ -365,6 +378,7 @@ function showComingSoonPopup(title, dateObj) {
 
 // ---------------- Initial render ----------------
 renderList();
+
 
 
 
