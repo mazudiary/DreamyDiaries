@@ -125,6 +125,13 @@ const creations = [
     date: "2025-12-17",
     availableAt: "2025-12-17T00:47",
   },
+  
+  {
+    title: "Happy New Year 2027",
+    link: "https://mazudiary.github.io/HappyNewYear2026/",
+    date: "2026-01-01",
+    availableAt: "2026-01-01T00:00",
+  },
   {
     title: "Premii Birthday's 2026",
     link: "https://mazudiary.github.io/PremiiBD2026/",
@@ -378,6 +385,7 @@ function showComingSoonPopup(title, dateObj) {
 
 // ---------------- Initial render ----------------
 renderList();
+
 
 
 
