@@ -7,123 +7,146 @@ const creations = [
     title: "Heartfelt Reminders",
     link: "https://basharulalammazu.github.io/HeartfeltReminders/",
     date: "2025-02-23",
+    category: "Personal",
   },
   {
     title: "How is she?",
     link: "https://mazudiary.github.io/HowSheIs/",
     date: "2025-03-24",
+    category: "Personal",
   },
   {
     title: "Life Galary",
     link: "https://sites.google.com/view/basharullifegallery",
     date: "2025-03-30",
+    category: "Portfolio",
   },
   {
     title: "ElaraValorFlower2025",
     link: "https://mazudiary.github.io/ElaraValorFlower2025/",
     date: "2025-05-15",
+    category: "Special",
   },
   {
     title: "The Finest Soul",
     link: "https://mazudiary.github.io/TheFinestSoul/",
     date: "2025-05-17",
+    category: "Personal",
   },
   {
     title: "Bio Data",
     link: "https://farzinahossainlopa.github.io/biodata/",
     date: "2025-04-04",
+    category: "Utility",
   },
   {
     title: "Valobashiii Valobashaa😘💖",
     link: "https://mazudiary.github.io/ValobashiiiValobasha/",
     date: "2025-06-01",
+    category: "Love",
   },
   {
     title: "Dream Valobashaa😘💖",
     link: "https://mazudiary.github.io/DreamValobasha/",
     date: "2025-06-03",
+    category: "Love",
   },
   {
     title: "Eid Mubarak -Financial Harmony",
     link: "https://mazudiary.github.io/EidMubarak-FinancialHarmony/",
     date: "2025-06-06",
+    category: "Holiday",
   },
   {
     title: "Elara Valor Tribute 😘💖",
     link: "https://mazudiary.github.io/PremiiIdiot-2Months/",
     date: "2025-06-08",
+    category: "Love",
   },
   {
     title: "Elara Valor BD 2025",
     link: "https://mazudiary.github.io/ElaraValorBD2025/",
     date: "2025-06-15",
+    category: "Birthday",
   },
   {
     title: "Private Love Garden 😘💖",
     link: "https://mazudiary.github.io/privatelovegarden/",
     date: "2025-06-17",
+    category: "Love",
   },
   {
     title: "Primary Key 😘💖",
     link: "https://mazudiary.github.io/privatelovegarden/",
     date: "2025-06-17",
+    category: "Love",
   },
   {
     title: "Forever Always Counter😘💖",
     link: "https://mazudiary.github.io/primarykey/",
     date: "2025-07-18",
+    category: "Counter",
   },
   {
     title: "Love Reply",
     link: "https://mazudiary.github.io/ForeverAlwaysCounter/",
     date: "2025-07-31",
+    category: "Love",
   },
   {
     title: "Premii & Idiot – 2 Months 😘💖",
     link: "https://mazudiary.github.io/PremiiIdiot-2Months/",
     date: "2025-08-17",
+    category: "Anniversary",
   },
   {
     title: "Premii & Idiot – 3 Months 😘💖",
     link: "https://mazudiary.github.io/PremiiIdiot-3Months/",
     date: "2025-09-17",
     availableAt: "2025-09-17T00:00",
+    category: "Anniversary",
   },
   {
     title: "Tashbih Counter",
     link: "https://mazudiary.github.io/tashbihcounter/",
     date: "2025-09-22",
     availableAt: "2025-09-22T00:00",
+    category: "Counter",
   },
   {
     title: "Premii & Idiot – 4 Months 😘💖",
     link: "https://mazudiary.github.io/PremiiIdiot-4Months/",
     date: "2025-10-17",
     availableAt: "2025-10-17T00:47",
+    category: "Anniversary",
   },
   {
     title: "Premii & Idiot – 5 Months 😘💖",
     link: "https://mazudiary.github.io/PremiiIdiot-5Months/",
     date: "2025-11-17",
     availableAt: "2025-11-17T00:47",
+    category: "Anniversary",
   },
   {
     title: "Thanks Giving 2025",
     link: "https://mazudiary.github.io/ThanksGiving2025/",
     date: "2025-11-27",
     availableAt: "2025-11-27T00:00",
+    category: "Holiday",
   },
   {
     title: "Premii & Idiot – 6 Months 😘💖",
     link: "https://mazudiary.github.io/PremiiIdiot-6Months/",
     date: "2025-12-17",
     availableAt: "2025-12-17T00:47",
+    category: "Anniversary",
   },
   {
     title: "Premii & Idiot – 6 Months(Special) 😘💖",
     link: "https://mazudiary.github.io/PremiiIdiot-6Months-Special/",
     date: "2025-12-17",
     availableAt: "2025-12-17T00:47",
+    category: "Anniversary",
   },
   
   {
@@ -131,6 +154,7 @@ const creations = [
     link: "https://mazudiary.github.io/HappyNewYear2026/",
     date: "2026-01-01",
     availableAt: "2026-01-01T00:00",
+    category: "Holiday",
   },
 
   {
@@ -138,6 +162,15 @@ const creations = [
     link: "https://mazudiary.github.io/PremiiIdiot-7Months/",
     date: "2026-01-17",
     availableAt: "2026-01-17T00:47",
+    category: "Anniversary",
+  },
+
+    {
+    title: "From Book Fair to Forever 2026",
+    link: "https://mazudiary.github.io/FromBookFairtoForever2026",
+    date: "2026-01-14",
+    availableAt: "2026-01-14T00:00",
+    category: "Story",
   },
 
   {
@@ -145,13 +178,7 @@ const creations = [
     link: "https://mazudiary.github.io/PremiiIdiot-8Months/",
     date: "2026-02-17",
     availableAt: "2026-02-17T00:47",
-  },
-
-  {
-    title: "From Book Fair to Forever 2026",
-    link: "https://mazudiary.github.io/FromBookFairtoForever2026",
-    date: "2026-01-14",
-    availableAt: "2026-01-14T00:00",
+    category: "Anniversary",
   },
 
   {
@@ -159,6 +186,7 @@ const creations = [
     link: "https://mazudiary.github.io/Ramadan2026/",
     date: "2026-02-18",
     availableAt: "2026-02-18T18:00",
+    category: "Holiday",
   },
   
   {
@@ -166,6 +194,7 @@ const creations = [
     link: "https://mazudiary.github.io/PremiiBD2026/",
     date: "2026-05-15",
     availableAt: "2026-05-15T00:00",
+    category: "Birthday",
   },
   
 ];
@@ -176,6 +205,7 @@ let sortOrder = "asc";
 let searchQuery = "";
 let yearFilter = "";
 let monthFilter = "";
+let categoryFilter = "";
 
 // ---------------- Render ----------------
 // Helper: parse available date
@@ -237,6 +267,10 @@ function renderList() {
       : "";
     if (monthFilter && mstr && mstr !== monthFilter) return false;
 
+    // Category filter
+    const catStr = c.category ? c.category : "Uncategorized";
+    if (categoryFilter && catStr !== categoryFilter) return false;
+
     return true;
   });
 
@@ -256,6 +290,14 @@ function renderList() {
     li.innerHTML = `${i + 1}. ${c.title} <span class="date">${
       dstr || ""
     }</span>`;
+
+    // Category label
+    const catLabel = document.createElement("span");
+    catLabel.classList.add("category");
+    catLabel.textContent = c.category || "Uncategorized";
+    catLabel.style.marginLeft = "8px";
+    catLabel.style.fontStyle = "italic";
+    li.appendChild(catLabel);
 
     if (c === latestDate && !isComingSoon(c)) {
       const ad = getAvailableDate(c);
@@ -353,6 +395,24 @@ filterMonth.addEventListener("change", function () {
   renderList();
 });
 
+// ---------------- Category Filter ----------------
+const filterCategory = document.getElementById("filterCategory");
+if (filterCategory) {
+  const categories = [
+    ...new Set(creations.map((c) => c.category || "Uncategorized")),
+  ];
+  categories.forEach((cat) => {
+    const option = document.createElement("option");
+    option.value = cat;
+    option.textContent = cat;
+    filterCategory.appendChild(option);
+  });
+  filterCategory.addEventListener("change", function () {
+    categoryFilter = this.value;
+    renderList();
+  });
+}
+
 // ---------------- Sorting ----------------
 function sortByTitle() {
   filtered.sort((a, b) => a.title.localeCompare(b.title));
@@ -393,9 +453,6 @@ function showComingSoonPopup(title, dateObj) {
   popup.style.borderRadius = "16px";
   popup.style.padding = "2rem";
   popup.style.textAlign = "center";
-  const dstr = coming
-    ? ""
-    : c.date || (c.availableAt ? c.availableAt.replace("T", " ") : "");
   popup.style.boxShadow = "0 8px 24px rgba(0,0,0,0.3)";
 
   const when = dateObj ? dateObj.toLocaleString() : "Very soon";
