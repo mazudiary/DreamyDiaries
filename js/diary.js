@@ -132,6 +132,35 @@ const creations = [
     date: "2026-01-01",
     availableAt: "2026-01-01T00:00",
   },
+
+  {
+    title: "Premii & Idiot – 7 Months 😘💖",
+    link: "https://mazudiary.github.io/PremiiIdiot-7Months/",
+    date: "2026-01-17",
+    availableAt: "2026-01-17T00:47",
+  },
+
+  {
+    title: "Premii & Idiot – 8 Months 😘💖",
+    link: "https://mazudiary.github.io/PremiiIdiot-8Months/",
+    date: "2026-02-17",
+    availableAt: "2026-02-17T00:47",
+  },
+
+  {
+    title: "Premii & Idiot – 6 Months 😘💖",
+    link: "https://mazudiary.github.io/FromBookFairtoForever2026",
+    date: "2026-01-14",
+    availableAt: "2026-01-14T00:00",
+  },
+
+  {
+    title: "Ramadan 2026",
+    link: "https://mazudiary.github.io/Ramadan2026/",
+    date: "2025-12-18",
+    availableAt: "2025-12-18T18:00",
+  },
+  
   {
     title: "Premii Birthday's 2026",
     link: "https://mazudiary.github.io/PremiiBD2026/",
@@ -385,6 +414,7 @@ function showComingSoonPopup(title, dateObj) {
 
 // ---------------- Initial render ----------------
 renderList();
+
 
 
 
