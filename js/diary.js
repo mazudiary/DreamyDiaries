@@ -148,7 +148,7 @@ const creations = [
   },
 
   {
-    title: "Premii & Idiot – 6 Months 😘💖",
+    title: "From Book Fair to Forever 2026",
     link: "https://mazudiary.github.io/FromBookFairtoForever2026",
     date: "2026-01-14",
     availableAt: "2026-01-14T00:00",
@@ -414,6 +414,7 @@ function showComingSoonPopup(title, dateObj) {
 
 // ---------------- Initial render ----------------
 renderList();
+
 
 
 
