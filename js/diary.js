@@ -188,6 +188,29 @@ const creations = [
     availableAt: "2026-02-18T18:00",
     category: "Holiday",
   },
+  {
+    title: "Eid Ul Fitar 2026",
+    link: "https://mazudiary.github.io/eid-ul-fitar2026/",
+    date: "2026-03-20",
+    availableAt: "2026-03-20T18:50",
+    category: "Holiday",
+  },
+
+  {
+    title: "Pohela Boishakh 2026",
+    link: "https://mazudiary.github.io/PohelaBoishakh2026/",
+    date: "2026-04-18",
+    availableAt: "2026-04-18T06:00",
+    category: "Holiday",
+  },
+
+  {
+    title: "Premii & Idiot – 10 Months 😘💖",
+    link: "https://mazudiary.github.io/PremiiIdiot-10Months/",
+    date: "2026-04-17",
+    availableAt: "2026-04-17T00:47",
+    category: "Anniversary",
+  },
   
   {
     title: "Premii Birthday's 2026",
