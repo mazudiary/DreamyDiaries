@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <link rel="icon" type="image/png" href="assets/favicon.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dreamy Diaries - Lock Screen 💖</title>
   <link rel="stylesheet" href="css/index.css">
 </head>
@@ -10,13 +11,16 @@
   <div class="lock-container">
     <div class="glow-title">Premii 💖</div>
     <h2>Enter Password</h2>
-    <div style="font-size:0.95rem;color:#d63384;margin-top:0.3rem;">Hint: What I like to call you</div>
+    <div class="hint-text">💭 Hint: What I like to call you 💭</div>
     <div class="error" id="error"></div>
     <div class="password-container">
-        <input type="password" id="password" placeholder="Password" autofocus />
-        <button type="button" class="toggle-btn" onclick="togglePassword()">Show</button>
+        <input type="password" id="password" placeholder="🔐 Password" autofocus />
+        <button type="button" class="toggle-btn" onclick="togglePassword()">
+          <span id="toggleIcon">👁️</span>
+          <span id="toggleText">Show</span>
+        </button>
     </div>
-    <button class="unlock-btn" onclick="unlock()">Unlock</button>
+    <button class="unlock-btn" onclick="unlock()">✨ Unlock ✨</button>
   </div>
   <script src="js/index.js"></script>
 </body>

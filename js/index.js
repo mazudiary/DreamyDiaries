@@ -118,15 +118,19 @@
 
     function togglePassword() {
       const pwdInput = document.getElementById('password');
-      const btn = document.querySelector('.toggle-btn');
+      const toggleIcon = document.getElementById('toggleIcon');
+      const toggleText = document.getElementById('toggleText');
+      
       if (pwdInput.type === 'password') {
         pwdInput.type = 'text';
         pwdInput.classList.add('visible-password');
-        btn.textContent = 'Hide';
+        toggleIcon.textContent = '🙈';
+        toggleText.textContent = 'Hide';
       } else {
         pwdInput.type = 'password';
         pwdInput.classList.remove('visible-password');
-        btn.textContent = 'Show';
+        toggleIcon.textContent = '👁️';
+        toggleText.textContent = 'Show';
       }
     }
 

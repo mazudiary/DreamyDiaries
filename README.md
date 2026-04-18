@@ -40,17 +40,69 @@ The project emphasizes **privacy, personalization, and romance**, with interacti
 
 ---
 
+## 🆕 NEW FEATURES (v1.0.0)
+
+### 📥 Download Data
+- Export all creations as JSON with version, timestamp, and categories
+- One-click backup for peace of mind
+- Share data with others easily
+
+### 🔄 Auto-Update System
+- Automatic update checks every 5 minutes
+- Manual update button for instant checks
+- Version-based detection - only loads when data changes
+- Real-time status display with color-coded messages
+
+### 📁 JSON-Based Data Management
+- Centralized data in `data/creations.json`
+- Easy to add new creations without code changes
+- Dynamic filtering and sorting from JSON
+- Production-ready with semantic versioning
+
+**👉 [Read the QUICKSTART.md for detailed guides!](QUICKSTART.md)**
+
+---
+
 ## 📂 File Structure
 
 ```
-index.html           — Lock screen for password entry
-main.html            — Main dashboard after login
-diary.html           — Diary list with controls and filters
-js/diary.js          — Logic for search, filter, sort, and comments
-diary.css            — Styles and visual design for diary pages
-CODE_OF_CONDUCT.md   — Professional Code of Conduct
-LICENSE              — Strict Personal-Use License
+index.html              — Lock screen for password entry
+diary.html              — Diary list with controls and filters
+data/
+  └── creations.json    — Centralized creations data (NEW)
+css/
+  ├── index.css         — Lock screen styles
+  └── diary.css         — Diary page styles
+js/
+  ├── index.js          — Lock screen logic
+  └── diary.js          — Diary logic with auto-update (UPDATED)
+assets/
+  └── favicon.png       — Site icon
+CODE_OF_CONDUCT.md      — Professional Code of Conduct
+LICENSE                 — Strict Personal-Use License
+README.md               — This file
+QUICKSTART.md           — Quick start guide for new features
+FEATURES.md             — Detailed feature documentation
+SETUP.md                — Setup & deployment guide
+JSON_SCHEMA.md          — JSON data structure reference
+IMPLEMENTATION.md       — Technical implementation details
+VERIFICATION.md         — Implementation verification checklist
 ```
+
+---
+
+## 📚 Documentation Guide
+
+| Document | Purpose | For Whom |
+|----------|---------|----------|
+| **QUICKSTART.md** | Get started in 5 minutes | Everyone |
+| **FEATURES.md** | Detailed feature explanations | Users |
+| **SETUP.md** | Deployment & configuration | Developers |
+| **JSON_SCHEMA.md** | Data structure reference | Developers |
+| **IMPLEMENTATION.md** | Technical implementation details | Developers |
+| **VERIFICATION.md** | Implementation checklist | Project leads |
+
+👉 **Start with [QUICKSTART.md](QUICKSTART.md) to learn the new features!**
 
 ---
 

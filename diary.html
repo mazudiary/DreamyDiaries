@@ -4,37 +4,89 @@
   <meta charset="UTF-8">
   <link rel="icon" type="image/png" href="assets/favicon.png">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dreamy Diaries - PremiiTreasures 💖</title>
+  <meta name="description" content="Dreamy Diaries - A curated archive of creations and milestones.">
+  <title>Dreamy Diaries | Love Creations Archive</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/diary.css">
 </head>
 <body>
-  <h1>🌹 My Love Creations for You, Premii 😘💖</h1>
+  <main class="page-shell">
+    <header class="page-header">
+      <div class="header-top">
+        <div class="header-left">
+          <p class="eyebrow">Dreamy Diaries</p>
+          <h1>Romantic Website Collection</h1>
+        </div>
+        <div class="header-right">
+          <div id="updateBadge" class="update-badge" aria-live="polite">
+            <span class="badge-count">0</span>
+            <span class="badge-label">New</span>
+          </div>
+          <div id="offlineIndicator" class="offline-indicator" aria-live="polite">
+            <span class="offline-dot"></span>
+            <span class="offline-label">Offline</span>
+          </div>
+          <div class="last-sync" id="lastSyncTime">Last sync: Just now</div>
+        </div>
+      </div>
+      <p class="page-subtitle">A curated romantic archive of heartfelt websites, love letters in code, and milestone creations designed to feel personal, timeless, and elegant.</p>
+    </header>
 
-  <div class="controls">
-    <input type="text" id="search" placeholder="Search by title or date...">
-    <select id="filterStatus" style="margin-right:0.5em">
-      <option value="all">All</option>
-      <option value="published">Published</option>
-      <option value="new">New</option>
-      <option value="coming">Coming Soon</option>
-    </select>
-    <select id="filterYear" style="margin-right:0.5em">
-      <option value="">Filter by year</option>
-    </select>
-    <select id="filterMonth">
-      <option value="">Filter by month</option>
-    </select>
-    <select id="filterCategory" style="margin-left:0.5em">
-      <option value="">Filter by category</option>
-    </select>
-    <button onclick="sortByTitle()">Sort by Title</button>
-    <button onclick="sortByDate()">Sort by Date</button>
-  </div>
-  <p style="color:#d63384; font-weight:bold; margin-bottom:10px;">
-    💌 Click on the text to leave a note or see surprises 💖
-  </p>
-  <ul id="creationsList"></ul>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle options menu" aria-expanded="false">
+      <span class="menu-toggle-icon" aria-hidden="true">
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+      </span>
+      <span class="menu-label">Options</span>
+    </button>
 
-  <script src = "js/diary.js"></script>
+    <div class="controls" id="controlsMenu">
+      <input type="text" id="search" placeholder="Search by title or date">
+      <select id="filterStatus">
+        <option value="all">All Entries</option>
+        <option value="published">Published</option>
+        <option value="new">New</option>
+        <option value="coming">Coming Soon</option>
+      </select>
+      <select id="filterYear">
+        <option value="">Filter by Year</option>
+      </select>
+      <select id="filterMonth">
+        <option value="">Filter by Month</option>
+      </select>
+      <select id="filterCategory">
+        <option value="">Filter by Category</option>
+      </select>
+      <button onclick="sortByTitle()">Sort by Title</button>
+      <button onclick="sortByDate()">Sort by Date</button>
+      <button onclick="downloadData()">Download Data</button>
+      <button onclick="checkForUpdates()" id="updateBtn" title="Check for new updates">Check Updates</button>
+      <div class="refresh-interval-control">
+        <label for="refreshInterval" class="refresh-interval-label">Auto-refresh (min)</label>
+        <input type="number" id="refreshInterval" class="refresh-interval-input" min="1" max="60" value="5">
+      </div>
+    </div>
+
+    <div id="updateStatus">
+      <span id="statusText"></span>
+      <button type="button" class="status-link-btn" onclick="toggleUpdateHistory()">View History</button>
+    </div>
+
+    <div id="updateHistoryPanel" class="update-history-panel" aria-hidden="true">
+      <div class="history-header">
+        <h3>Update History</h3>
+        <button type="button" class="close-history" onclick="toggleUpdateHistory()" aria-label="Close update history">×</button>
+      </div>
+      <div id="updateHistoryList" class="history-list"></div>
+    </div>
+
+    <p class="description-text">Select an item to open it in a new tab.</p>
+    <ul id="creationsList"></ul>
+  </main>
+
+  <script src="js/diary.js"></script>
 </body>
 </html>
