@@ -142,3 +142,20 @@ Please see [LICENSE](LICENSE) for full legal details.
 
 Created with **love and care for Premii** 💖
 
+
+
+---
+
+## 🦋 Butterfly Dashboard link
+
+`diary.html` now has a **Butterfly Dashboard** button (header + footer) that opens
+<https://mazudiary.github.io/ButterflyDashboard/> in the same tab. The dashboard has a
+"Back to Dreamy Diaries" link that returns here.
+
+## ⏱ Dates & release times
+
+* The list is shown **oldest → newest** (month headings). *Sort by Date* / *Sort by Title* toggle ascending/descending.
+* Times in `data/creations.json` (`availableAt`, e.g. `2026-04-17T00:47`) are read as **Bangladesh time (UTC+6)** for every visitor,
+  so an entry opens at the same real moment everywhere. A `date` without `availableAt` opens at 00:00 Bangladesh time.
+* When an entry's time arrives, the list updates itself (no reload) and "Coming Soon" becomes "Published".
+* Content changes in `creations.json` are detected even if `version` is not bumped.

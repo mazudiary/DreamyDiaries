@@ -2,16 +2,25 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <link rel="icon" type="image/png" href="assets/favicon.png">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#fff2f7">
   <meta name="description" content="Dreamy Diaries - A curated archive of creations and milestones.">
   <title>Dreamy Diaries | Love Creations Archive</title>
+  <link rel="icon" type="image/png" href="assets/favicon-192.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,600&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/diary.css">
 </head>
 <body>
+  <!-- Decorative drifting butterflies + glow -->
+  <div class="ambient" aria-hidden="true">
+    <span class="fly fly-1">🦋</span>
+    <span class="fly fly-2">🦋</span>
+    <span class="fly fly-3">💖</span>
+    <span class="fly fly-4">🦋</span>
+  </div>
+
   <main class="page-shell">
     <header class="page-header">
       <div class="header-top">
@@ -20,7 +29,7 @@
           <h1>Romantic Website Collection</h1>
         </div>
         <div class="header-right">
-          <div id="updateBadge" class="update-badge" aria-live="polite">
+          <div id="updateBadge" class="update-badge" aria-live="polite" title="New creations since your last check">
             <span class="badge-count">0</span>
             <span class="badge-label">New</span>
           </div>
@@ -32,9 +41,29 @@
         </div>
       </div>
       <p class="page-subtitle">A curated romantic archive of heartfelt websites, love letters in code, and milestone creations designed to feel personal, timeless, and elegant.</p>
+
+      <!-- Link to the Butterfly Dashboard (opens in the same tab) -->
+      <a class="dashboard-cta" id="dashboardBtn" href="https://mazudiary.github.io/ButterflyDashboard/">
+        <span class="cta-butterfly" aria-hidden="true">🦋</span>
+        <span class="cta-text">
+          <strong>Butterfly Dashboard</strong>
+          <small>Step into the living timeline of surprises &amp; locked memories</small>
+        </span>
+        <span class="cta-arrow" aria-hidden="true">→</span>
+      </a>
+
+      <div class="stats" id="stats" aria-label="Collection summary">
+        <div class="stat"><span class="stat-num" id="statTotal">0</span><span class="stat-label">Creations</span></div>
+        <div class="stat"><span class="stat-num" id="statLive">0</span><span class="stat-label">Published</span></div>
+        <div class="stat"><span class="stat-num" id="statSoon">0</span><span class="stat-label">Coming soon</span></div>
+        <div class="stat stat-next" id="nextUnlock" hidden>
+          <span class="stat-label">Next surprise</span>
+          <span class="stat-next-text" id="nextUnlockText"></span>
+        </div>
+      </div>
     </header>
 
-    <button class="menu-toggle" id="menuToggle" aria-label="Toggle options menu" aria-expanded="false">
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle options menu" aria-expanded="false" aria-controls="controlsMenu">
       <span class="menu-toggle-icon" aria-hidden="true">
         <span class="hamburger-bar"></span>
         <span class="hamburger-bar"></span>
@@ -44,26 +73,26 @@
     </button>
 
     <div class="controls" id="controlsMenu">
-      <input type="text" id="search" placeholder="Search by title or date">
-      <select id="filterStatus">
+      <input type="search" id="search" class="ctl-search" placeholder="Search by title, date or category" aria-label="Search creations">
+      <select id="filterStatus" aria-label="Filter by status">
         <option value="all">All Entries</option>
         <option value="published">Published</option>
         <option value="new">New</option>
         <option value="coming">Coming Soon</option>
       </select>
-      <select id="filterYear">
-        <option value="">Filter by Year</option>
+      <select id="filterYear" aria-label="Filter by year">
+        <option value="">All years</option>
       </select>
-      <select id="filterMonth">
-        <option value="">Filter by Month</option>
+      <select id="filterMonth" aria-label="Filter by month">
+        <option value="">All months</option>
       </select>
-      <select id="filterCategory">
-        <option value="">Filter by Category</option>
+      <select id="filterCategory" aria-label="Filter by category">
+        <option value="">All categories</option>
       </select>
-      <button onclick="sortByTitle()">Sort by Title</button>
-      <button onclick="sortByDate()">Sort by Date</button>
-      <button onclick="downloadData()">Download Data</button>
-      <button onclick="checkForUpdates()" id="updateBtn" title="Check for new updates">Check Updates</button>
+      <button type="button" class="btn" id="sortTitleBtn" onclick="sortByTitle()">Sort by Title</button>
+      <button type="button" class="btn" id="sortDateBtn" onclick="sortByDate()">Sort by Date</button>
+      <button type="button" class="btn" onclick="downloadData()">Download Data</button>
+      <button type="button" class="btn btn-dark" onclick="checkForUpdates()" id="updateBtn" title="Check for new updates">Check Updates</button>
       <div class="refresh-interval-control">
         <label for="refreshInterval" class="refresh-interval-label">Auto-refresh (min)</label>
         <input type="number" id="refreshInterval" class="refresh-interval-input" min="1" max="60" value="5">
@@ -71,7 +100,7 @@
     </div>
 
     <div id="updateStatus">
-      <span id="statusText"></span>
+      <span id="statusText" role="status" aria-live="polite"></span>
       <button type="button" class="status-link-btn" onclick="toggleUpdateHistory()">View History</button>
     </div>
 
@@ -83,8 +112,16 @@
       <div id="updateHistoryList" class="history-list"></div>
     </div>
 
-    <p class="description-text">Select an item to open it in a new tab.</p>
+    <div class="list-head">
+      <p class="description-text">Select an item to open it in a new tab. <span class="tz-note">Release times use Bangladesh time (UTC+6).</span></p>
+      <p class="result-count" id="resultCount" aria-live="polite"></p>
+    </div>
     <ul id="creationsList"></ul>
+
+    <footer class="page-footer">
+      <span>Made with 💖 for Premii</span>
+      <a href="https://mazudiary.github.io/ButterflyDashboard/">🦋 Butterfly Dashboard</a>
+    </footer>
   </main>
 
   <script src="js/diary.js"></script>
